@@ -28,7 +28,7 @@
                 @endforeach
 
                 <h3 style="font-size: 22px; font-weight: bold; margin-top: 30px; margin-bottom: 15px;">
-                    Groups
+                    Daftar Group
                 </h3>
 
                 @foreach ($groups as $group)
