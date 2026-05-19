@@ -53,7 +53,7 @@
                         type="submit"
                         style="width: 100%; background: #22c55e; color: white; padding: 12px; border-radius: 6px; font-weight: bold;"
                     >
-                        Buat Group
+                        Tambah Group
                     </button>
                 </form>
             </div>
