@@ -1,50 +1,26 @@
 # Realtime Chat Laravel
 
-Project ini merupakan aplikasi chat berbasis web yang dibuat menggunakan Laravel. Aplikasi ini memiliki fitur chat antar user, group chat, status online/offline, dan realtime chat menggunakan Laravel Reverb.
+Aplikasi chat berbasis web menggunakan Laravel. Project ini dibuat untuk tugas Project 2.
 
-## Fitur Aplikasi
+## Fitur
 
 - Login dan register user
 - Private chat antar user
 - Group chat
 - Membuat group baru
-- Menampilkan status online dan offline user
-- Mengirim pesan tanpa refresh halaman
-- Realtime chat menggunakan Laravel Reverb
-- Tampilan sederhana dan mudah digunakan
+- Status online/offline user
+- Chat realtime tanpa refresh
+- Menggunakan Laravel Reverb
 
-## Teknologi yang Digunakan
+## Teknologi
 
 - Laravel
 - Laravel Breeze
 - Laravel Reverb
 - MySQL
-- Blade Template
+- Blade
 - JavaScript
 - Vite
-- Git dan GitHub
-
-## Struktur Fitur
-
-### 1. Autentikasi User
-
-User dapat melakukan register dan login sebelum masuk ke halaman chat. Fitur autentikasi menggunakan Laravel Breeze.
-
-### 2. Private Chat
-
-User dapat memilih user lain untuk melakukan percakapan secara pribadi.
-
-### 3. Group Chat
-
-User dapat membuat group baru dan mengirim pesan di dalam group tersebut.
-
-### 4. Status Online dan Offline
-
-Aplikasi menampilkan status user apakah sedang online atau offline berdasarkan aktivitas terakhir user.
-
-### 5. Realtime Chat
-
-Pesan dapat muncul secara realtime tanpa harus melakukan refresh halaman. Fitur ini menggunakan WebSocket dengan Laravel Reverb.
 
 ## Cara Menjalankan Project
 
@@ -52,3 +28,59 @@ Pesan dapat muncul secara realtime tanpa harus melakukan refresh halaman. Fitur 
 
 ```bash
 git clone https://github.com/nasywaalifta/realtime-chat.git
+```
+
+2. Masuk ke folder project
+
+```bash
+cd realtime-chat
+```
+
+3. Install dependency
+
+```bash
+composer install
+npm install
+```
+
+4. Copy file `.env`
+
+```bash
+cp .env.example .env
+```
+
+5. Generate key
+
+```bash
+php artisan key:generate
+```
+
+6. Atur database di file `.env`
+
+```env
+DB_DATABASE=realtime_chat
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+7. Jalankan migration
+
+```bash
+php artisan migrate
+```
+
+8. Jalankan project
+
+```bash
+php artisan serve
+npm run dev
+php artisan reverb:start
+```
+
+## Cara Demo
+
+Login menggunakan dua akun berbeda, lalu coba kirim pesan melalui private chat atau group chat. Pesan akan muncul secara realtime tanpa refresh halaman.
+
+## Pembuat
+
+Nasywa Alifta
