@@ -97,7 +97,7 @@
                             id="message-input"
                             type="text"
                             name="message"
-                            placeholder="Tulis pesan..."
+                            placeholder="Ketik pesan..."
                             required
                             autocomplete="off"
                             style="flex: 1; border: 1px solid #ddd; padding: 12px; border-radius: 6px;"
