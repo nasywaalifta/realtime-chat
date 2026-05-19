@@ -11,7 +11,7 @@
             {{-- SIDEBAR --}}
             <div style="width: 32%; background: white; padding: 20px; border-radius: 6px;">
                 <h3 style="font-size: 22px; font-weight: bold; margin-bottom: 20px;">
-                    Users
+                    Daftar User
                 </h3>
 
                 @foreach ($users as $user)
