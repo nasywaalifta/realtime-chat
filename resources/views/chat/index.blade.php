@@ -44,7 +44,7 @@
                     <input
                         type="text"
                         name="name"
-                        placeholder="Nama group"
+                        placeholder="Masukkan nama group"
                         required
                         style="width: 100%; border: 1px solid #ddd; padding: 12px; border-radius: 6px; margin-bottom: 10px;"
                     >
